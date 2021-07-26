@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>IDE's Portfolio Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  </head>
+<body>
+<header class="header-area">
+    <div class="header-icon">
+      <img src="images/site-logo.jpg">
+    </div>
+    <ul class="header-list", id="header-list">
+      <li><a href="/", class="list-content">Top</a>
+      <li><a href="#welcome-area", class="list-content">This Site</a>
+      <li><a href="#profile-area", class="list-content">My Profile</a>
+      <li><a href="#contact-area", class="list-content">Contact</a>
+    </ul>
+</header>
+<main>
+  <div class="title-area", id="title-area">
+    <p class="site-title maintitleFadeIn">
+      IDE's Portfolio Site
+    </p>
+  </div>
+  <div class="wave">
+    <canvas id="waveCanvas"></canvas>
+  </div>
+  <div class="welcome-area", id="welcome-area">
+    <h3 class="welcome-title">
+      我がポートフォリオサイトにお越しくださり、<br />
+      ありがとうございます。
+    </h3>
+    <p class="welcome-contents">
+      <span class='sentence'>
+      このサイトは、未経験エンジニア転職を目指す私、IDEを<br />
+      知っていただくためにまとめたページです。<br />
+      どうぞごゆるりとご覧くださいませ。<br />
+      </span>
+    </p>
+  </div>
+  <div class="profile-area", id="profile-area">
+    <div class="profile-title-area">
+      <h3 class="title">
+        私のこと。
+      </h3>
+      <div class="my-icons">
+        <img src='images/my-icon.jpg', class="my-icon">
+        <ul class="profile-icons">
+          <li><a href='https://twitter.com/programmingnuoh'><img src='images/twitter-logo.png', class="twitter-icon"></a></li>
+          <li><a href='https://github.com/programmingnuoh'><img src='images/github-logo.png', class="github-icon"></a></li>
+          <li><a href='https://t.co/FCUoXZJScg?amp=1'><img src='images/hatena-logo.svg', class="hatena-icon"></a> </li>
+        </ul>
+      </div>
+    </div>
+    <p class="profile-contents">
+      <span class='sentence'>
+      　生まれも育ちも埼玉の生粋さいたまん(27歳)。服飾系の大学でファッション/デザイン史を<br />
+      学んだのち、かばん・財布の卸商社へ入社。営業に従事する傍ら、企画や広報の業務にも携わる。<br />
+      営業をする中で、IT技術で世の課題解決ができるものを開発したいと思い、エンジニア転職を決意、現在に至る。<br />
+      </span>
+    </div>
+  </div>
+  <div class="work-area">
+    <h3 class="title">
+      作ったもの。
+    </h3>
+    <p class="work-title">アプリケーション</p>
+    <div class="work-contents">
+      <div class="work-deli-content">
+        <div class="works-logo">
+          <img src="images/oriapp.png", class="logo-image">
+        </div>
+        <h2 class="works-title">Deli share<br />（惣菜共有アプリ）</h2>
+      </div>
+      <div class="work-deli-detail">
+        <div class="works-detail-title">
+          <a href='http://35.74.57.140/', class="works-detail-name">Deli share
+          <a href='https://github.com/programmingnuoh/delishare'><img src='images/github-logo.png', class='works-github'></a>
+          <p class="work-exit">×</p>
+        </div>
+        <p class="works-explanation">
+          このアプリケーションは、企画立案〜デプロイまで初めて1人で行った開発物です。<br />
+          スーパーマーケットやコンビニで売っている惣菜やそのアレンジレシピを共有できるアプリです。<br />
+          これは、私が出張族だったときに欲しかったな、と思ったものを形にしました。<br />
+          そのため、アプリの雰囲気は20代女性に使っていただけるような明るい印象に、
+          しかしレイアウトはあまり機械が得意でない方にも気軽に使っていただけるようにわかりやすくするよう心がけました。<br />
+          将来的に、SNS共有/連携ができるようにして、さらにアプリ利用者が自分の投稿を拡散できるようにしたいと思っています。<br />
+        </p>
+        <div class="works-info">
+          <div class="works-environment">
+            <h5 class="use-language">使用言語など</h5>
+            <p class="use-language-info">
+              Ruby on Rails, HTML/CSS, JavaScript, jQuery, MySQL, AWS
+            </p>
+          </div>
+          <div class="works-images-slide">
+            <p class="image-prev deli">◀︎</p>
+            <div class="works-image-box">
+              <img src="images/deli-1.png", class="main-image deli">
+            </div>
+            <p class="image-next deli">▶︎</p>
+          </div>
+        </div>
+      </div>
+      <div class="work-ide-content">
+        <div class="works-logo">
+          <img src="images/site-logo.png", class="logo-image">
+        </div>
+        <h2 class="works-title">ポートフォリオサイト</h2>
+      </div>
+      <div class="work-ide-detail block">
+        <div class="works-detail-title">
+          <a href='#', class="works-detail-name">IDE's Portfolio Site
+          <a href='https://github.com/programmingnuoh/portfolio-site'><img src='images/github-logo.png', class='works-github'></a>
+          <p class="work-exit">×</p>
+        </div>
+        <p class="works-explanation">
+          このサイトは、私自身について今現在のスキルや簡単な経歴について知っていただけるよう作成しました。<br />
+          フロントをこだわりたかったので、ここでjQueryを使い、今自分ができる限りの表現をこのサイト内でしています。<br />
+          ちなみにこのサイトのイメージがなぜ水モチーフなのかというと、<br />
+          子供の頃ずっと水泳をやっていたこと、好きなキャラクターが水に関係していることが多いことが理由です。<br />
+          好きを要所要所に散りばめてみました笑。<br />
+          閲覧者様がこのサイトを見ていただくことでより深く私のことについて知っていただければと思います。
+        </p>        
+        <div class="works-info">
+          <div class="works-environment">
+            <h5 class="use-language">使用言語など</h5>
+            <p class="use-language-info">
+              HTML/CSS, JavaScript, jQuery
+            </p>
+          </div>
+          <div class="works-images-slide">
+            <p class="image-prev ide">◀︎</p>
+            <div class="works-image-box">
+              <img src="images/ide-1.png", class="main-image ide">
+            </div>
+            <p class="image-next ide">▶︎</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="skill-area">
+    <h3 class="title">
+      私ができること。
+    </h3>
+    <div class="skill-contents-area">
+      <div class="skill-contents">
+        <div class="skill-content programming">HTML</div>
+        <div class="skill-content programming">CSS</div>
+        <div class="skill-content programming">Ruby</div>
+      </div>
+      <div class="skill-contents">
+        <div class="skill-content programming">Ruby on Rails</div>
+        <div class="skill-content programming">JavaScript</div>
+        <div class="skill-content programming">GitHub</div>
+      </div>
+      <div class="skill-contents">
+        <div class="skill-content others">TOEIC(685点)</div>
+        <div class="skill-content others">Photoshop</div>
+        <div class="skill-content others">Illustrator</div>
+      </div>
+    </div>
+  </div>
+  <div class="history-area">
+    <h3 class="title">
+      私の今まで。
+    </h3>
+    <section id="history-contents">
+      <div class="timeline-start">1994/07<br />爆誕</div>
+      <div class="conference-center-line"></div>
+      <div class="conference-timeline-content">
+        <div class="timeline-article">
+          <div class="content-left-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2007</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons large-size">videocam</span>
+                <span class="material-icons large-size">mic</span>
+                <span class="material-icons large-size">group</span>
+              </div>
+            </div>
+            <div class="content-left">
+              <p>埼玉県内のとある中高一貫校に入学。高校時代には放送部に所属し、ドキュメンタリーやドラマの制作を行なっていた。そのときの仲間は今でも最高の友人たち。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
+        </div>
+
+        <div class="timeline-article">
+          <div class="content-right-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2013</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons large-size">checkroom</span>
+                <span class="material-icons large-size">iron</span>
+                <span class="material-icons large-size">auto_stories</span>
+              </div>
+            </div>
+            <div class="content-right">
+              <p>ファッションが学べる大学へ進学。作品制作等でファッションに対する基礎知識を深めた後、デザイン史ゼミに所属する。
+              このときに本当に知りたいことを学んでいくうちに勉強の楽しさを実感する。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
+        </div>
+
+        <div class="timeline-article">
+          <div class="content-left-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2017</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons large-size">badge</span>
+                <span class="material-icons large-size">luggage</span>
+                <span class="material-icons large-size">directions_transit</span>
+              </div>
+            </div>
+            <div class="content-left">
+              <p>カバン・財布の卸商社へ入社。法人営業として全国展開するお取引先様の担当になり、日本各地を駆け巡る。
+              各ご担当の方を仕事をしていく中で、お客様のことを第一に考えた商品展開について熟考する。チーム内で売り上げが1番になったときは嬉しかった。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
+        </div>
+
+        <div class="timeline-article">
+          <div class="content-right-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2018</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons large-size">backpack</span>
+                <span class="material-icons large-size">style</span>
+                <span class="material-icons large-size">design_services</span>
+              </div>
+            </div>
+            <div class="content-right">
+              <p>新規プロジェクトに企画・営業として携わる。商品企画を1から行なった。外部展示会に出展し、注文もいただいたがその後思うように売れず1年ほどでプロジェクトは終了してしまった。
+              お客様のニーズに応えられる商品企画をすることの難しさを学んだ。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
+        </div>
+ 
+        <div class="timeline-article">
+          <div class="content-left-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2019</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons large-size">shopping_bag</span>
+                <span class="material-icons large-size">devices</span>
+                <span class="material-icons large-size">contact_mail</span>
+              </div>
+            </div>
+            <div class="content-left">
+              <p>百貨店向けブランドを扱う子会社へ出向。ECモールに出店されている小売店の営業を担当。単価が異なる商品の営業に四苦八苦する。</p>
+            </div>
+          </div>
+          <div class="content-right-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2019</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons large-size">brush</span>
+                <span class="material-icons large-size">palette</span>
+                <span class="material-icons large-size">photo_camera</span>
+              </div>
+            </div>
+            <div class="content-right">
+              <p>出向と同時に営業の傍ら広報としても携わる。お取引先様向けのカタログやバナーの作成などを行っている。
+              IllustratorやPhotoshopを学習するため、オンライン講座を見たり、社内のデザイナーさんからアドバイスをいただいたりなどをすることでソフトに対する知見を学んだ。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
+        </div>
+
+        <div class="timeline-article">
+          <div class="content-left-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2020</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons large-size">laptop_mac</span>
+                <span class="material-icons large-size">code</span>
+                <span class="material-icons large-size">local_fire_department</span>
+              </div>
+            </div>
+            <div class="content-left">
+              <p>エンジニア転職を目指し、プログラミングの学習を始める。ただモノを生産するだけでなく、どのようにお客様のもとへ届けるか考えた末辿り着いたのがITだった。
+              より良い商品をもっと多くの方のもとへ届けたいという考えから転職を志す。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
+        </div>
+      </div>
+      <div class="timeline-end">To be continued...</div>
+    </section>
+  </div>
+  <div class="mind-area">
+    <h3 class="title">
+      私が大切にしていること。
+    </h3>
+    <p class="mind-contents">
+      <span class='sentence'>
+      　私は、常にエンドユーザーの目線を意識して仕事に取り組んで<br />
+      まいりました。商品の見せ方、売り方、謳い文句…。<br />
+      買ってよかった！使ってよかった！と思っていただけるように試行錯誤を繰り返していました。<br />
+      　この気持ちは、エンジニアになっても変わらず大切にしていきたいと考えています。<br />
+      お客様の使ってよかった！を聞くために、より良いサービスを<br />
+      開発できるよう、今後も仕事に従事していきます。<br />
+      </span>
+    </p>
+  </div>
+  <div class="contact-area", id="contact-area">
+    <h3 class="title">お問合せ</h3>
+    <div class="contact-contents">
+    <%= form_with model: @contact, local:true do |f| %>
+      <%= f.text_field :name, placeholder:'お名前', class:"contact-content" %><br>
+      <%= f.text_field :mail_address, placeholder:'返信先のメールアドレス', class:"contact-content" %><br>
+      <%= f.text_area :message, placeholder: 'お問合せ内容',class:"contact-content message" %><br>
+      <%= f.submit "送信",class:"contact-content submit" %>
+    <% end %>
+    </div>
+  </div>
+  <div class="welcome-area">
+    <div id="bubbles"></div>
+    <h3 class="welcome-title">
+      最後までご覧いただき、<br />
+      ありがとうございました。
+    </h3>
+    <p class="welcome-contents">
+      <span class='sentence'>
+      このサイトを見てくださった皆様にお会いできる日を<br />
+      心より楽しみにしております。<br />
+      </span>
+    </p>
+  </div>
+</main>
+<footer class="footer-area">
+  <p class="copyright">Copyright ©️IDE's Portfolio Site All rights reserved.</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="JavaScript/move.js"></script>
+<script src="JavaScript/wave.js"></script>
+<script src="JavaScript/bubble.js"></script>
+<script src="JavaScript/work-move.js"></script>
+</body>
+</html>
