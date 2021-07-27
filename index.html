@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>IDE's Portfolio Site</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   </head>
@@ -13,7 +14,7 @@
       <img src="images/site-logo.jpg">
     </div>
     <ul class="header-list", id="header-list">
-      <li><a href="/", class="list-content">Top</a>
+      <li><a href="#title-area", class="list-content">Top</a>
       <li><a href="#welcome-area", class="list-content">This Site</a>
       <li><a href="#profile-area", class="list-content">My Profile</a>
       <li><a href="#contact-area", class="list-content">Contact</a>
@@ -77,7 +78,7 @@
       </div>
       <div class="work-deli-detail">
         <div class="works-detail-title">
-          <a href='http://35.74.57.140/', class="works-detail-name">Deli share
+          <a href='http://35.74.57.140/', class="works-detail-name">Deli share</a>
           <a href='https://github.com/programmingnuoh/delishare'><img src='images/github-logo.png', class='works-github'></a>
           <p class="work-exit">×</p>
         </div>
@@ -114,7 +115,7 @@
       <div class="work-ide-detail block">
         <div class="works-detail-title">
           <a href='#', class="works-detail-name">IDE's Portfolio Site
-          <a href='https://github.com/programmingnuoh/portfolio-site'><img src='images/github-logo.png', class='works-github'></a>
+          <a href='https://github.com/programmingnuoh/ide-portfolio-site'><img src='images/github-logo.png', class='works-github'></a>
           <p class="work-exit">×</p>
         </div>
         <p class="works-explanation">
@@ -129,7 +130,7 @@
           <div class="works-environment">
             <h5 class="use-language">使用言語など</h5>
             <p class="use-language-info">
-              HTML/CSS, JavaScript, jQuery
+              HTML/CSS, JavaScript, jQuery, GitHubPages
             </p>
           </div>
           <div class="works-images-slide">
@@ -327,14 +328,12 @@
   </div>
   <div class="contact-area", id="contact-area">
     <h3 class="title">お問合せ</h3>
-    <div class="contact-contents">
-    <%= form_with model: @contact, local:true do |f| %>
-      <%= f.text_field :name, placeholder:'お名前', class:"contact-content" %><br>
-      <%= f.text_field :mail_address, placeholder:'返信先のメールアドレス', class:"contact-content" %><br>
-      <%= f.text_area :message, placeholder: 'お問合せ内容',class:"contact-content message" %><br>
-      <%= f.submit "送信",class:"contact-content submit" %>
-    <% end %>
-    </div>
+    <form class="contact-contents", action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSdewhqSUX0EHifuEzl0oXRPDjm-MKXE0wDcuwEG5lhkUX_2OA/formResponse", method="post">
+      <input type='text', name='entry.2005620554', placeholder='お名前', class="contact-content" ><br>
+      <input type='text', name='entry.1045781291', placeholder='返信先のメールアドレス', class="contact-content"><br>
+      <textarea name='entry.839337160', placeholder='お問合せ内容', class="contact-content message"></textarea>
+      <input type='submit', name='submit', placeholder="送信", class="contact-content submit">
+    </form>
   </div>
   <div class="welcome-area">
     <div id="bubbles"></div>
